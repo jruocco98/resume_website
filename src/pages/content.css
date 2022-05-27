@@ -1,0 +1,41 @@
+body{
+    font-size: 22px;
+    font-family: Garamond, 'Times New Roman', Times, serif;  
+}
+ul{
+    font-size: 22px;
+    line-height: 24px;
+    margin-left: -30px;
+    margin-top: -5px;   
+}
+.skills{
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+li{
+    margin: 6px;
+}
+.header{
+    font-family: 'Gotham';
+    border-bottom: solid 1px;
+    padding-bottom: 4px;
+    height: 80px;
+    font-size: 1.4em;
+    margin-top: -50px;
+}
+.primary{
+    line-height: 23px;
+    padding-top: 4px;
+    
+}
+.secondary{
+    font-size: 1.1em;
+    margin-top: -35px;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}

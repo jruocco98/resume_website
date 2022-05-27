@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+.parent{
+    display: flex;
+    align-items: stretch;
+}
+.buttonGroup{
+    background-color: #000000;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 20px;
+    font-family: 'Gotham';
+    color: rgba(250, 253, 255, 0.644);
+    margin-top: -8px;
+    margin-bottom: 10px;
+    width: 100vw;
+    border-bottom: 1px solid #000000;
+    padding-left: 5px;
+    padding-bottom: 1px;
+    position: fixed;
+    z-index: 2;
+}
+.wrapper{
+    height: 99vh;
+    width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body{
+    
+    /* background-image: url("images/newyork2.jpg"); */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 99vh;
+    width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px; 
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body::-webkit-scrollbar {
+    width:0px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
