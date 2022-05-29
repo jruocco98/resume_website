@@ -39,8 +39,9 @@ function App() {
           className="parent">
           <Router>
             <Navbar />
+            
             <Routes>
-              <Route path='/' element={<Home/>} />
+              <Route path='/Aboutme' element={<Home/>} />
               <Route path='/experience' element={<Experience/>} />
               <Route path='/projects' element={<Projects/>} />
               <Route path='/education' element={<Education/>} />
