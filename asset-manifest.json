@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/resume_website/static/css/main.9237aee3.chunk.css",
-    "main.js": "/resume_website/static/js/main.3edfcb28.chunk.js",
-    "main.js.map": "/resume_website/static/js/main.3edfcb28.chunk.js.map",
-    "runtime-main.js": "/resume_website/static/js/runtime-main.009922bc.js",
-    "runtime-main.js.map": "/resume_website/static/js/runtime-main.009922bc.js.map",
-    "static/js/2.79a08259.chunk.js": "/resume_website/static/js/2.79a08259.chunk.js",
-    "static/js/2.79a08259.chunk.js.map": "/resume_website/static/js/2.79a08259.chunk.js.map",
-    "index.html": "/resume_website/index.html",
-    "static/css/main.9237aee3.chunk.css.map": "/resume_website/static/css/main.9237aee3.chunk.css.map",
-    "static/js/2.79a08259.chunk.js.LICENSE.txt": "/resume_website/static/js/2.79a08259.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/resume_website/static/media/gotham_medium_regular-webfont.44000ade.woff2",
-    "static/media/japanmarket2.4814f211.jpg": "/resume_website/static/media/japanmarket2.4814f211.jpg",
-    "static/media/metlife2.c40c0003.jpg": "/resume_website/static/media/metlife2.c40c0003.jpg",
-    "static/media/newyork3.2767fabc.jpg": "/resume_website/static/media/newyork3.2767fabc.jpg",
-    "static/media/trains2.5f0b1464.jpg": "/resume_website/static/media/trains2.5f0b1464.jpg",
-    "static/media/wave.f73f2924.png": "/resume_website/static/media/wave.f73f2924.png"
+    "main.css": "/static/css/main.de29fbb0.chunk.css",
+    "main.js": "/static/js/main.44052f25.chunk.js",
+    "main.js.map": "/static/js/main.44052f25.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.583dcabd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.583dcabd.js.map",
+    "static/js/2.5527e875.chunk.js": "/static/js/2.5527e875.chunk.js",
+    "static/js/2.5527e875.chunk.js.map": "/static/js/2.5527e875.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.de29fbb0.chunk.css.map": "/static/css/main.de29fbb0.chunk.css.map",
+    "static/js/2.5527e875.chunk.js.LICENSE.txt": "/static/js/2.5527e875.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/gotham_medium_regular-webfont.44000ade.woff2",
+    "static/media/japanmarket2.4814f211.jpg": "/static/media/japanmarket2.4814f211.jpg",
+    "static/media/metlife2.c40c0003.jpg": "/static/media/metlife2.c40c0003.jpg",
+    "static/media/newyork3.2767fabc.jpg": "/static/media/newyork3.2767fabc.jpg",
+    "static/media/trains2.5f0b1464.jpg": "/static/media/trains2.5f0b1464.jpg",
+    "static/media/wave.f73f2924.png": "/static/media/wave.f73f2924.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.009922bc.js",
-    "static/js/2.79a08259.chunk.js",
-    "static/css/main.9237aee3.chunk.css",
-    "static/js/main.3edfcb28.chunk.js"
+    "static/js/runtime-main.583dcabd.js",
+    "static/js/2.5527e875.chunk.js",
+    "static/css/main.de29fbb0.chunk.css",
+    "static/js/main.44052f25.chunk.js"
   ]
 }
