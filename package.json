@@ -1,7 +1,7 @@
 {
   "name": "resume-web",
   "version": "0.1.0",
-  "homepage": "https://jruocco98.github.io/resume-website",
+  "homepage": "https://www.garrettruocco.com/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
