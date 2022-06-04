@@ -1,15 +1,32 @@
 import React from 'react';
-import {Icon1, Icon2, Icon3, Icon4, Icon5, Icon6} from './IconElements'
+import {Icon1, Icon2, Icon3, Icon5, Icon6} from './IconElements'
 import {
   Nav,
   NavLink,
   NavMenu
 } from './NavbarElements'
-
-const Navbar = () => {
+import logo from './icon/gr_laurel4.png'
+const Navbar = () => { 
+  console.log(logo)
   return(
     <>
+    
+
       <Nav>
+      <div style={{
+        height: '100px',
+        width: '50%',
+        display: 'block',
+        marginLeft: 'auto',
+        marginRight: '59px',
+        marginTop: '20px',
+        marginBottom: '30px',
+
+        
+      }}>
+      <img src={logo} alt={"GR icon"} style={{width:'auto',height:'auto', paddingRight: '50px',}} onError={console.log("ERROR icon")}/>
+      </div>
+      <hr width='77%' color='black'/>
         <NavMenu>
           
           <NavLink to='/' activestyle>

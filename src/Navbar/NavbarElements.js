@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   width: 205px;
   justify-content: space-between; 
   margin-left: -2px;
-  margin-top: 15px;
+  margin-top: 35px;
   
   position: fixed;
   border-right: solid 3px;
@@ -38,7 +38,7 @@ export const NavLink = styled(Link)`
 export const NavMenu = styled.div`
 
   
-  margin-top: 65px;
+  margin-top: 20px;
 
 `;
 
