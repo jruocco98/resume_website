@@ -2,33 +2,18 @@ import React from 'react';
 const Education = () => {
     
     return(
-        <div
-            style={{
-                color: '#c2c2c2',
-                display: 'block',
-                justifyContent: 'Center',
-                alignItems: 'Right',
-                width: '50vw',
-                height: '100%',
-                marginLeft: '29%',
-                marginTop:'90px',
-                background: 'rgba(0, 0, 0, 0.95)',
-                padding: '30px',                
-                paddingRight: '20px',
-                border: '2px solid black',
-            }}
-            >
+        <div className='page'>
             <div className="header">
                 <h1>Education</h1>
             </div>   
             <div className='primary'>
                 <h2>Masters of Science in Data Science</h2>
-                <p><b>University of West Florida - Pensacola,FL - In Progress</b></p>    
+                <div className='secondary' style={{paddingTop: '12px'}}><b>University of West Florida - Pensacola,FL - In Progress</b></div>    
             </div>
 
             <div className='primary'>
                 <h2>Bachelor of Science in Mathematics</h2>
-                <p><b>Minor in Statistics - University of West Florida - Pensacola,FL - 2018</b></p>
+                <div className='secondary' style={{paddingTop: '12px'}}><b>Minor in Statistics - University of West Florida - Pensacola,FL - 2018</b></div>
                 
             </div>
 

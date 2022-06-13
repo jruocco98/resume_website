@@ -1,23 +1,8 @@
 import React from 'react';
-
 const Experience = () => {
     return(
 
-        <div
-            style={{
-                color: '#c2c2c2',
-                display: 'block',
-                justifyContent: 'Center',
-                alignItems: 'Right',
-                width: '50vw',
-                marginLeft: '29%',
-                marginTop:'90px',
-                background: 'rgba(0, 0, 0, 0.95)',
-                padding: '30px',                
-                paddingRight: '20px',
-                border: '2px solid black',
-            }}
-            >
+        <div className='page'>
             
             <div className="header">
                 <h1>Experience</h1>
@@ -63,7 +48,7 @@ const Experience = () => {
             <br />
             <ul>
                 <li>Responsible for providing a safe and structured learning environment for up to thirty students per class, that range from middle school to high school.</li>
-                <li>Implemented a teacher’s given lesson plan in their absence for a variety of subjects such as mathematics, English, social
+                <li>Implemented a teacher's given lesson plan in their absence for a variety of subjects such as mathematics, English, social
                 studies, etc.</li>
             </ul>
 

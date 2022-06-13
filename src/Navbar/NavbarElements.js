@@ -6,8 +6,8 @@ export const Nav = styled.nav`
   width: 205px;
   justify-content: space-between; 
   margin-left: -2px;
-  margin-top: 35px;
-  
+  margin-top: -47px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 8px 6px;
   position: fixed;
   border-right: solid 3px;
   z-index: 1;

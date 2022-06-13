@@ -1,9 +1,51 @@
+@media screen and (max-width: 865px) {
+    .header {
+      font-size: 4.3vw;
+      
+      margin-top: calc(8vw - 2.5em);
+      
+    }
+    .primary{
+        font-size: calc(.4em + 1.3vw); 
+    }
+    .secondary{
+        font-size: calc(.9em + .6vw);
+    }
+    ul{
+        font-size: calc(.5em + 1.7vw);
+    }
+    .page{
+        padding-top: -12px;
+        margin:auto;
+    }
+  }
+@media screen and (min-width: 866px) {
+
+    .header {
+        font-size: 2.4em;
+        margin-top: 1.5%;
+    }
+    .secondary{
+        font-size: 1.2em;
+    }
+    ul{
+        font-size: 22px;
+    }
+    .page{
+        
+        margin-left:29.8vw;
+    }
+    #tictactoe{
+        margin-left:43.3vw;
+    }
+}
+
 body{
-    font-size: 22px;
+    
     font-family: Garamond, 'Times New Roman', Times, serif;  
 }
 ul{
-    font-size: 22px;
+    
     line-height: 24px;
     margin-left: -30px;
     margin-top: -5px;   
@@ -20,9 +62,10 @@ li{
     font-family: 'Gotham';
     border-bottom: solid 1px;
     padding-bottom: 4px;
+    
     height: 80px;
-    font-size: 1.4em;
-    margin-top: -50px;
+    position: relative;
+    
 }
 .primary{
     line-height: 23px;
@@ -30,12 +73,40 @@ li{
     
 }
 .secondary{
-    font-size: 1.1em;
-    margin-top: -35px;
+    
+    margin-top: -20px;
 }
 .alignleft {
-	float: left;
+	text-align: left; 
+    width:50%; 
+    display: inline-block;
 }
 .alignright {
-	float: right;
+	text-align: 
+    right; 
+    width:50%;  
+    display: inline-block;
+}
+h1{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: absolute;
+    bottom: 0;
+}
+.page{
+    color: #c2c2c2;
+    width: 47vw;
+    margin-top:90px;   
+    background: rgba(0, 0, 0, 0.9);
+    padding: 40px;   
+    box-shadow: black 2px 5px 10px 6px;
+    min-width: 240px;
+}
+#tictactoe{
+    width: 20vw;
+    text-align: center;
+    font-family: Gotham;
+    min-width: 300px;
+    font-size: 22px;
+    background: rgba(0, 0, 0, 0.85);
 }

@@ -1,26 +1,74 @@
-.parent{
-    display: flex;
-    align-items: stretch;
+@media screen and (min-width: 546px) {
+    .banner_text{ 
+        font-size: calc(.5em + 1.2vw); 
+    }
+    #phone{
+        margin-left:142px;
+    } 
 }
+@media screen and (max-width: 545px) {
+    .banner_text{
+        font-size: 16.5px;       
+    }  
+    #phone{
+        margin-left: 0px;
+    } 
+}
+.parent{
+    height: 100%;
+    position:relative;
+}
+.content_wrapper{
+    padding-bottom: 40px;
+    
+    width: 100vw;
+}
+
 .buttonGroup{
     background-color: #000000;
     text-align: center;
     padding-top: 8px;
-    font-size: 20px;
+    
     font-family: 'Gotham';
     color: rgba(250, 253, 255, 0.644);
     margin-top: -8px;
     margin-bottom: 10px;
-    width: 100vw;
-    border-bottom: 1px solid #000000;
-    padding-left: 5px;
+    width: 100%;
+    border-bottom: 2px solid #c2c2c2;
     padding-bottom: 1px;
     position: fixed;
+    top: 8px;
+    z-index: 3;
+}
+.banner_text{
+    margin-top: 10px;
+    color:#FBB8B9;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    position: absolute;
+    width:100%;
+}
+.menu_btn_wrapper{
+    position: absolute;
+    height: 100%;
+    top: -47px;
+}
+.cancel_btn_wrapper{
+    position: absolute;
+    height: 100%;
+    top: -47px;
+    left: 206px;
     z-index: 2;
 }
+
 .wrapper{
-    height: 99vh;
+    height: 100%;
+    width: 100%;
+}
+.click_field{
     width: 100vw;
+    height: 100vh;
+    position: absolute;
 }
 
 html, body{
@@ -30,11 +78,9 @@ html, body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 99vh;
-    width: 100vw;
-    margin-left: 0px;
-    margin-right: 0px; 
-    
+    width: 50vw;
+    margin:0px;
+    margin-right: 0px;  
 }
 
 body::-webkit-scrollbar {

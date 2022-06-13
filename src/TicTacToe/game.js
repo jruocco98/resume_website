@@ -1,5 +1,7 @@
-export function selectSquare(num, row, col, board, setBoard){
+import AlertDialog from "./DialogBox"
 
+export function selectSquare(num, row, col, board, setBoard, result, setResult){
+    
     let tempArray = []
     for (let i = 0; i < board.length; i++){
         tempArray[i] = board[i].slice()
@@ -24,11 +26,11 @@ export function selectSquare(num, row, col, board, setBoard){
         return
     }
 
-    setTimeout(checkWinner, 200, 'x', tempArray)
-    setTimeout(computerTurn, 600, tempArray, setBoard)   
+    setTimeout(checkWinner, 200, 'x', tempArray, result, setResult)
+    setTimeout(computerTurn, 600, tempArray, setBoard, result, setResult)   
 }
 
-function computerTurn(board, setBoard){
+function computerTurn(board, setBoard, result, setResult){
     
     let tempArray = []
     for (let i = 0; i < board.length; i++){
@@ -49,7 +51,7 @@ function computerTurn(board, setBoard){
     }
 
     //sets board 
-    let num = perfectMove(board, setBoard)   
+    let num = perfectMove(board, setBoard ,result, setResult)   
     let x = document.getElementById(num)
    
     //sets css
@@ -61,7 +63,7 @@ function computerTurn(board, setBoard){
     z[0].className = 'enabled'      
 }
 
-function perfectMove(board, setBoard){
+function perfectMove(board, setBoard, result, setResult){
 
     //check for win
     let num = -1
@@ -162,7 +164,7 @@ function perfectMove(board, setBoard){
             counter++
         }
     }
-    setTimeout(checkWinner,100, 'o', tempArray)
+    setTimeout(checkWinner,100, 'o', tempArray, result, setResult)
     return num
 }
 
@@ -653,7 +655,7 @@ function setGameEnd(setGameOver){
     let x = document.getElementById('board')
     x.className = 'disabled'
 }
-function checkWinner(player, board){    
+function checkWinner(player, board, result, setResult){    
     let counter = 0
     
     for(let i = 0; i < 3; i++){
@@ -667,7 +669,7 @@ function checkWinner(player, board){
             
             if(counter === 3){
                 counter = 0
-                alert(player + " wins!")
+                setResult("You Lose")
                 setGameEnd()
                 return
             }  
@@ -683,7 +685,7 @@ function checkWinner(player, board){
             
             if(counter === 3){
                 counter = 0
-                alert(player + " wins!") 
+                setResult("You Lose")
                 setGameEnd()
                 return                      
             } 
@@ -699,7 +701,7 @@ function checkWinner(player, board){
                 
         if(counter === 3){
             counter = 0
-            alert(player + " wins!")
+            setResult("You Lose")
             setGameEnd()
             return                     
         }             
@@ -714,7 +716,7 @@ function checkWinner(player, board){
         } 
         if(counter === 3){
             counter = 0
-            alert(player + " wins!")
+            setResult("You Lose")
             setGameEnd()
             return                     
         }     
@@ -725,6 +727,6 @@ function checkWinner(player, board){
             return
         }       
     }
-    alert('Tie!')
+    setResult("Draw") 
 }
 

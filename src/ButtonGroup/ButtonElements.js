@@ -13,13 +13,14 @@ font-size:15px;
 `;
 export const Icon2 = styled(SiGmail)`
 color: #BB001B;
+margin-left: 125px;
 font-size: 30px;
 &:hover {
     cursor: pointer;
 }
 `;
 export const Icon3 = styled(SiLinkedin)`
-margin-right: 100px;
+margin-right: 0px;
 color: #0e76a8;
 font-size:30px;
 &:hover {
@@ -29,7 +30,7 @@ font-size:30px;
 export const Icon4 = styled(FaPhone)`
 color: #c2c2c2;
 font-size:26px;
-margin-left: 100px;
+margin-left: 125px;
 &:hover {
     cursor: pointer;
 }

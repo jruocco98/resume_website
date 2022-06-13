@@ -2,7 +2,7 @@ import React from 'react'
 function Reset(props){
 
     return(
-        <button Style='font-size: 25px' onClick={() => resetBoard(props.board, props.setBoard)}>Reset</button>
+        <button className='button-54' Style='font-size: 25px' onClick={() => resetBoard(props.board, props.setBoard)}>Reset</button>
     )
 }
 

@@ -24,3 +24,44 @@
 div.empty:hover{
     background-color: #FBB8B9;
 }
+#board{
+    width:316px;
+    height:316px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    background: #181718;
+    margin:auto;
+    margin-bottom:40px;
+    position:relative;
+}
+
+
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #c2c2c2;
+  color: black;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 866px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}

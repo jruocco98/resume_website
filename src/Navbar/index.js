@@ -6,12 +6,10 @@ import {
   NavMenu
 } from './NavbarElements'
 import logo from './icon/gr_laurel4.png'
-const Navbar = () => { 
-  console.log(logo)
+const Navbar = () => {
+
   return(
     <>
-    
-
       <Nav>
       <div style={{
         height: '100px',
@@ -21,10 +19,8 @@ const Navbar = () => {
         marginRight: '59px',
         marginTop: '20px',
         marginBottom: '30px',
-
-        
       }}>
-      <img src={logo} alt={"GR icon"} style={{width:'auto',height:'auto', paddingRight: '50px',}} onError={console.log("ERROR icon")}/>
+      <img src={logo} alt={"GR icon"} draggable="false" style={{width:'auto',height:'auto', paddingRight: '50px',}}/>
       </div>
       <hr width='77%' color='black'/>
         <NavMenu>
