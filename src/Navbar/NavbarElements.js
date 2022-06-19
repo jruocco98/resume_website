@@ -10,11 +10,12 @@ export const Nav = styled.nav`
   box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 8px 6px;
   position: fixed;
   border-right: solid 3px;
-  z-index: 1;
+  z-index: 10;
 `;
 export const NavLink = styled(Link)`
   color: #c2c2c2;
   background: rgba(24, 23, 24, 0.0);  
+
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -29,15 +30,14 @@ export const NavLink = styled(Link)`
   }
 
   &.active {
-    color: #000000;
+    color: #FBB8B9;
     font-size: 22px;
+    text-shadow: 4px 4px black;
   }
 
 `;
 //#ff6a67
 export const NavMenu = styled.div`
-
-  
   margin-top: 20px;
 
 `;

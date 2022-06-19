@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 
-function useOutsideAlerter(ref, setMenuPressed, resize, menuPressed) {
+function useOutsideAlerter(ref, setMenuPressed, resize, menuPressed, setCancelPressed) {
 
     useEffect(() => {
       /**
@@ -10,6 +10,7 @@ function useOutsideAlerter(ref, setMenuPressed, resize, menuPressed) {
         if (ref.current && !ref.current.contains(event.target)) {
             if(resize && menuPressed){
                 setMenuPressed(false)
+                setCancelPressed(true)
             }
         }
       }
@@ -21,7 +22,7 @@ function useOutsideAlerter(ref, setMenuPressed, resize, menuPressed) {
         // Unbind the event listener on clean up
         document.removeEventListener("mousedown", handleClickOutside);
       };
-    }, [ref, setMenuPressed, resize, menuPressed]);
+    }, [ref, setMenuPressed, resize, menuPressed, setCancelPressed]);
   }
 
   /**
@@ -30,7 +31,7 @@ function useOutsideAlerter(ref, setMenuPressed, resize, menuPressed) {
 export default function OutsideAlerter(props) {
     const wrapperRef = useRef(null);
     
-    useOutsideAlerter(wrapperRef, props.setMenuPressed, props.resize, props.menuPressed);
+    useOutsideAlerter(wrapperRef, props.setMenuPressed, props.resize, props.menuPressed, props.setCancelPressed);
     
     return <div className='click_check' ref={wrapperRef}>{props.children}</div>;
   }

@@ -20,8 +20,9 @@
 }
 .content_wrapper{
     padding-bottom: 40px;
-    
+    position:relative;
     width: 100vw;
+    z-index: -1;
 }
 
 .buttonGroup{
@@ -52,15 +53,15 @@
     position: absolute;
     height: 100%;
     top: -47px;
+    z-index:8;
 }
 .cancel_btn_wrapper{
     position: absolute;
     height: 100%;
     top: -47px;
-    left: 206px;
-    z-index: 2;
-}
+    left: 168px;
 
+}
 .wrapper{
     height: 100%;
     width: 100%;
