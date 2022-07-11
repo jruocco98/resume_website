@@ -70,7 +70,6 @@ li{
 .primary{
     line-height: 23px;
     padding-top: 4px;
-    
 }
 .secondary{
     
@@ -109,4 +108,92 @@ h1{
     min-width: 300px;
     font-size: 22px;
     background: rgba(0, 0, 0, 0.85);
+}
+.box-container{
+    width: 47vw;
+    min-width: 240px;
+    margin-top: 75px;
+    display: grid;
+    gap: 5%;
+    justify-content: center;
+    padding-bottom: 200px;
+    
+    
+}
+.movie-box{
+    box-shadow: black 2px 5px 10px 6px;
+    white-space: normal;
+    color: black;
+    font-family: Gotham;
+}
+.bottom{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .85);
+    color: #c2c2c2;
+    font-family: Gotham;
+    font-size: calc(.6vw + .36em);
+    border: solid black 1px;
+    overflow: hidden;
+    
+}
+.bottom > p {
+    margin-top: 12px;
+    padding-left: 12px;
+    
+}
+.movie-overlay{
+    height: 100%;
+    width: 100%;   
+}
+
+.top{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+#film-diary{
+    background-size: 100% 175px;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+a:visited { 
+    text-decoration: none;
+    color: #c2c2c2;
+}
+.header-wrapper{
+    background-color: rgba(0, 0, 0, .95);
+    box-shadow: black 2px 5px 10px 6px;
+    height: 175px;
+    width: 100%;
+    padding: 40px;
+    margin-left: -40px;  
+    margin-top: -41px;
+    
+}
+@media screen and (max-width: 1299px) {
+    .box-container{
+        
+        grid-template-rows: calc(19vw + 13em) calc(19vw + 13em) calc(19vw + 13em) calc(19vw + 13em) calc(19vw + 13em);        
+    }
+    .movie-box{
+        height: calc(19vw + 15em);
+        width: calc((19vw + 15em) * .667);
+    }
+}
+@media screen and (min-width: 1300px) {
+    .box-container{
+        grid-template-columns: calc((15.8vw + 12.8em) * .667) calc((15.8vw + 12.8em) * .667);
+        grid-template-rows: calc(15.8vw + 12.8em) calc(15.8vw + 12.8em);
+    }
+    .movie-box{
+        height: calc(15.8vw + 12.8em);
+        width: calc((15.8vw + 12.8em) * .667);
+    }
 }

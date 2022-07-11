@@ -7,6 +7,7 @@ import Skills from './pages/skills';
 import TicTacToe from './pages/playme';
 import Education from './pages/education'
 import Projects from './pages/projects'
+import FilmDiary from './pages/film-diary'
 import ButtonGroup from './ButtonGroup/ButtonGroup';
 import MenuBtn from './Navbar/Buttons/menuBtn';
 import CancelBtn from './Navbar/Buttons/cancelBtn'
@@ -97,7 +98,7 @@ function App() {
                 <Route path='/education' element={<Education/>} />
                 <Route path='/skills' element={<Skills/>} />
                 <Route path='/playme' element={<TicTacToe/>} />
-                
+                <Route path='/film-diary' element={<FilmDiary/>} />
               </Routes>
               </div>
             </Router>  

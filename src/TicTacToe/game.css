@@ -22,7 +22,7 @@
     pointer-events: none
 }
 div.empty:hover{
-    background-color: #FBB8B9;
+    background-color: #fccfd0;
 }
 #board{
     width:316px;

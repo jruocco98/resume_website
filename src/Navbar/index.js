@@ -1,5 +1,5 @@
 import React from 'react';
-import {Icon1, Icon2, Icon3, Icon5, Icon6} from './IconElements'
+import {Icon1, Icon2, Icon3, Icon5, Icon6, Icon7} from './IconElements'
 import {
   Nav,
   NavLink,
@@ -34,11 +34,14 @@ const Navbar = () => {
           <NavLink to='/projects' activestyle>
             <Icon3/>Projects
           </NavLink>
-          <NavLink Style='line-height: 28px' to='/education' activestyle>
+          <NavLink style={{lineHeight: '28px'}} to='/education' activestyle>
             <Icon5/>Education +<br/>Skills
           </NavLink>
           <NavLink to='/playme' activestyle>
             <Icon6/>Play Me!
+          </NavLink>
+          <NavLink to='/film-diary' activestyle>
+            <Icon7/>Film Diary
           </NavLink>
           
         </NavMenu>

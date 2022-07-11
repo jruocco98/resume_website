@@ -17,6 +17,7 @@
 .parent{
     height: 100%;
     position:relative;
+    z-index: 5;
 }
 .content_wrapper{
     padding-bottom: 40px;
@@ -39,7 +40,7 @@
     padding-bottom: 1px;
     position: fixed;
     top: 8px;
-    z-index: 3;
+    z-index: 12;
 }
 .banner_text{
     margin-top: 10px;
@@ -83,7 +84,9 @@ html, body{
     margin:0px;
     margin-right: 0px;  
 }
-
+a:visited { 
+    text-decoration: none; 
+   }
 body::-webkit-scrollbar {
     width:0px;
   }

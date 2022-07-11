@@ -25,12 +25,12 @@ export const NavLink = styled(Link)`
   font-size: 20px;
   font-family: "Helvetica";
   &:hover {
-    color: #FBB8B9;
+    color: #fccfd0;
     font-size: 22px;  
   }
 
   &.active {
-    color: #FBB8B9;
+    color: #fccfd0;
     font-size: 22px;
     text-shadow: 4px 4px black;
   }

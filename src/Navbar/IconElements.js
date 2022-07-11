@@ -1,4 +1,4 @@
-import { MdOutlineScience, MdOutlineSchool, MdOutlineLightbulb, MdOutlineVideogameAsset, MdPersonOutline, MdOutlineFeed } from "react-icons/md";
+import { MdOutlineScience, MdOutlineSchool, MdOutlineLightbulb, MdOutlineVideogameAsset, MdPersonOutline, MdOutlineFeed, MdOutlineLocalMovies } from "react-icons/md";
 import styled from 'styled-components'
 
 export const Icon1 = styled(MdOutlineFeed)`
@@ -32,6 +32,13 @@ margin-left: -1px;
 font-size: 24px;
 `;
 export const Icon6 = styled(MdOutlineVideogameAsset)`
+padding-right: 20px;
+color: #d9d9d9;
+margin-left: -1px;
+font-size: 24px;
+`;
+
+export const Icon7 = styled(MdOutlineLocalMovies)`
 padding-right: 20px;
 color: #d9d9d9;
 margin-left: -1px;

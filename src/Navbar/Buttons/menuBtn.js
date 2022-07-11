@@ -5,7 +5,6 @@ const MenuBtn = (props) => {
     return(
         <div className='menu_btn_component'
         onClick={()=>{
-            console.log("PRESSED")
             props.setMenuPressed(true)
             props.setCancelPressed(false)}}
         style={{ }}>
